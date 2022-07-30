@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>sst</string>
+	</array>
+	<key>name</key>
+	<string>Swift Syntax Tree</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>match</key>
+			<string>//</string>
+			<key>name</key>
+			<string>comment.line.sst</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Swift Syntax Tree Source File</string>
+			<key>match</key>
+			<string>\b(source_file)\b</string>
+			<key>name</key>
+			<string>support.class.sst.source-file</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Swift Syntax Tree Decl</string>
+			<key>match</key>
+			<string>\b(import_decl|extension_decl|typealias|opaque_type|generic_type_param|associated_type_decl|protocol|var_decl|parameter_list|parameter|enum_case_decl|enum_decl|enum_element_decl|struct_decl|class_decl|pattern_binding_decl|subscript_decl|func_decl|accessor_decl|constructor_decl|destructor_decl|top_level_code_decl|if_config_decl|pound_diagnostic_decl|precedence_group_decl|infix_operator_decl|prefix_operator_decl|postfix_operator_decl|module|missing_member_decl)\b</string>
+			<key>name</key>
+			<string>support.class.sst.decl</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Swift Syntax Tree Stmt</string>
+			<key>match</key>
+			<string>\b(brace_stmt|return_stmt|yield_stmt|defer_stmt|if_stmt|guard_stmt|do_stmt|while_stmt|repeat_while_stmt|for_each_stmt|break_stmt|continue_stmt|fallthrough_stmt|switch_stmt|case_stmt|fail_stmt|throw_stmt|pound_assert|do_catch_stmt)\b</string>
+			<key>name</key>
+			<string>keyword.control.sst.stms</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Swift Syntax Tree Expr</string>
+			<key>match</key>
+			<string>\b(semantic_expr|error_expr|code_completion_expr|integer_literal_expr|float_literal_expr|boolean_literal_expr|string_literal_expr|interpolated_string_literal_expr|magic_identifier_literal_expr|regex_literal_expr|object_literal|discard_assignment_expr|declref_expr|super_ref_expr|type_expr|other_constructor_ref_expr|overloaded_decl_ref_expr|unresolved_decl_ref_expr|unresolved_specialize_expr|member_ref_expr|dynamic_member_ref_expr|unresolved_member_expr|dot_self_expr|paren_expr|await_expr|unresolved_member_chain_expr|tuple_expr|pack_expr|array_expr|dictionary_expr|subscript_expr|keypath_application_expr|dynamic_subscript_expr|unresolved_dot_expr|tuple_element_expr|destructure_tuple_expr|unresolvedtype_conversion_expr|function_conversion_expr|covariant_function_conversion_expr|covariant_return_conversion_expr|underlying_to_opaque_expr|erasure_expr|any_hashable_erasure_expr|conditional_bridge_from_objc_expr|bridge_from_objc_expr|bridge_to_objc_expr|reify_pack|load_expr|metatype_conversion_expr|collection_upcast_expr|derived_to_base_expr|archetype_to_super_expr|inject_into_optional|class_metatype_to_object|existential_metatype_to_object|protocol_metatype_to_object|inout_to_pointer|array_to_pointer|string_to_pointer|pointer_to_pointer|foreign_object_conversion|unevaluated_instance|differentiable_function|linear_function|differentiable_function_extract_original|linear_function_extract_original|linear_to_differentiable_function|inout_expr|vararg_expansion_expr|force_try_expr|optional_try_expr|try_expr|sequence_expr|capture_list|closure_expr|autoclosure_expr|metatype_expr|opaque_value_expr|property_wrapper_value_placeholder_expr|applied_property_wrapper_expr|default_argument_expr|call_expr|prefix_unary_expr|postfix_unary_expr|binary_expr|dot_syntax_call_expr|constructor_ref_call_expr|dot_syntax_base_ignored|forced_checked_cast_expr|conditional_checked_cast_expr|is_subtype_expr|coerce_expr|arrow|rebind_self_in_constructor_expr|if_expr|assign_expr|enum_is_case_expr|unresolved_pattern_expr|bind_optional_expr|optional_evaluation_expr|force_value_expr|open_existential_expr|make_temporarily_escapable_expr|editor_placeholder_expr|lazy_initializer_expr|objc_selector_expr|keypath_expr|key_path_dot_expr|one_way_expr|tap_expr)\b</string>
+			<key>name</key>
+			<string>support.function.sst.expr</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Swift Syntax Tree Pattern</string>
+			<key>match</key>
+			<string>\b(pattern_paren|pattern_tuple|pattern_named|pattern_any|pattern_typed|pattern_is|pattern_expr|pattern_let|pattern_var|pattern_enum_element|pattern_optional_some|pattern_bool)\b</string>
+			<key>name</key>
+			<string>support.variable.sst.pattern</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Swift Syntax Tree TypeRepr</string>
+			<key>match</key>
+			<string>\b(type_error|type_attributed|type_ident|component|type_function|type_array|type_dictionary|type_tuple|type_composite|type_metatype|type_protocol|type_inout|type_shared|type_owned|isolated|_const|type_optional|type_implicitly_unwrapped_optional|type_opaque_return|type_named_opaque_return|type_existential|type_placeholder|type_fixed|sil_box|sil_box_field)\b</string>
+			<key>name</key>
+			<string>support.type.sst.type-repr</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Swift Syntax Tree Argument</string>
+			<key>match</key>
+			<string>\b(argument_list|argument)\b</string>
+			<key>name</key>
+			<string>variable.parameter.sst.argument</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Swift Syntax Tree Default Attribute Name</string>
+			<key>match</key>
+			<string>(?=\s)[\w\s]+(?=\=)|(?=\s)[\w\s]+</string>
+			<key>name</key>
+			<string>keyword.other.sst.modifier</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\d+\:\d+</string>
+			<key>name</key>
+			<string>support.other.sst.location-literal</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>"</string>
+			<key>end</key>
+			<string>"</string>
+			<key>name</key>
+			<string>string.quoted.double.sst</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>'</string>
+			<key>end</key>
+			<string>'</string>
+			<key>name</key>
+			<string>string.quoted.single.sst</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b\d+\.\d+(e-?\d+)\b</string>
+			<key>name</key>
+			<string>constant.numeric.float.sst</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(\d+|0(x|X)[a-fA-F0-9]+)\b</string>
+			<key>name</key>
+			<string>constant.numeric.integer.sst</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b\(&lt;&lt;invalid&gt;&gt;|\*\*NULL\*\*|\*\*NULL STATEMENT\*\*|\*\*NULL EXPRESSION\*\*\)\b</string>
+			<key>name</key>
+			<string>invalid.illegal.sst</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>@|\.|:|\[|]|\(|\)</string>
+			<key>name</key>
+			<string>keyword.operator.sst</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>&lt;anonymous&gt;|Original init:|Processed init:</string>
+			<key>name</key>
+			<string>keyword.other.sst</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.sst</string>
+	<key>uuid</key>
+	<string>A20FA994-62C6-462C-8FD8-78E9C2271C23</string>
+</dict>
+</plist>

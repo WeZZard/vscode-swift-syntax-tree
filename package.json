@@ -1,0 +1,43 @@
+{
+	"name": "swift-syntax-tree",
+	"displayName": "Swift Syntax Tree",
+	"description": "Swift syntax tree highlight",
+	"version": "0.1.0",
+	"publisher": "WeZZard",
+	"engines": {
+		"vscode": "^1.69.2"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "swift-syntax-tree",
+				"aliases": [
+					"Swift Syntax Tree",
+					"swift syntax tree"
+				],
+				"extensions": [
+					".sst"
+				],
+				"configuration": "./sst.configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "swift-syntax-tree",
+				"scopeName": "source.sst",
+				"path": "./sst.tmbundle/Syntaxes/SwiftSyntaxTree.tmLanguage"
+			}
+		]
+	},
+	"bugs": {
+		"url": "https://github.com/WeZZard/vscode-swift-syntax-tree/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/WeZZard/vscode-swift-syntax-tree.git"
+	},
+	"homepage": "https://github.com/WeZZard/vscode-swift-syntax-tree/blob/main/README.md"
+}
