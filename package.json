@@ -2,7 +2,7 @@
 	"name": "swift-syntax-tree",
 	"displayName": "Swift Syntax Tree",
 	"description": "Swift syntax tree highlight",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"publisher": "WeZZard",
 	"engines": {
 		"vscode": "^1.69.2"

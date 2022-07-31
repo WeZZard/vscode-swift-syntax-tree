@@ -38,7 +38,7 @@
 			<key>match</key>
 			<string>\b(brace_stmt|return_stmt|yield_stmt|defer_stmt|if_stmt|guard_stmt|do_stmt|while_stmt|repeat_while_stmt|for_each_stmt|break_stmt|continue_stmt|fallthrough_stmt|switch_stmt|case_stmt|fail_stmt|throw_stmt|pound_assert|do_catch_stmt)\b</string>
 			<key>name</key>
-			<string>keyword.control.sst.stms</string>
+			<string>variable.language.sst.stms</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -76,9 +76,41 @@
 			<key>comment</key>
 			<string>Swift Syntax Tree Default Attribute Name</string>
 			<key>match</key>
-			<string>(?=\s)[\w\s]+(?=\=)|(?=\s)[\w\s]+</string>
+			<string>(?&lt;=\s)[\w\s]+(?=\=)|(?&lt;=\s)[\w\s]+</string>
 			<key>name</key>
 			<string>keyword.other.sst.modifier</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Swift Syntax Tree Expr Modifier</string>
+			<key>match</key>
+			<string></string>
+			<key>name</key>
+			<string>keyword.other.sst.expr-modifier</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Swift Syntax Tree Decl Modifier</string>
+			<key>match</key>
+			<string></string>
+			<key>name</key>
+			<string>keyword.other.sst.decl-modifier</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Swift Syntax Tree Arg Modifier</string>
+			<key>match</key>
+			<string></string>
+			<key>name</key>
+			<string>keyword.other.sst.arg-modifier</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Swift Syntax Tree Closure Modifier</string>
+			<key>match</key>
+			<string></string>
+			<key>name</key>
+			<string>keyword.other.sst.closure-modifier</string>
 		</dict>
 		<dict>
 			<key>match</key>
